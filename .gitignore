@@ -1,0 +1,20 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment files
+venv/
+env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore model files (if storing separately)
+*.pkl
+*.joblib
