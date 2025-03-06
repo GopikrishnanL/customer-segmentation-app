@@ -4,13 +4,17 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import requests
 
 # Load trained K-Means model and scaler
 kmeans = pickle.load(open('kmeans_model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
-# Load dataset
-df = pd.read_csv(r"C:\Users\lgopi\E-commerce_Customer_Segmentation--Using-KMeans-Clustering-Algorithm-main\cust_data.csv")
+# GitHub raw file URL
+url = "https://raw.githubusercontent.com/your-username/your-repo/main/cust_data.csv"
+
+# Read CSV directly from GitHub
+df = pd.read_csv(url)
 
 # **Handle missing values by generating synthetic data**
 if "Age" not in df.columns:
