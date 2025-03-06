@@ -11,7 +11,7 @@ kmeans = pickle.load(open('kmeans_model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 # GitHub raw file URL
-url = "https://github.com/GopikrishnanL/customer-segmentation-app.git/cust_data.csv"
+url = "https://github.com/GopikrishnanL/customer-segmentation-app/blob/ede7af04d7f4ecf0d0fd7442d07735aa78f6cd62/cust_data.csv"
 
 # Read CSV directly from GitHub
 df = pd.read_csv(url)
