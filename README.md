@@ -11,6 +11,7 @@ Processing: The model predicts the customer segment.
 Output: The app visualizes clusters of similar customers.
 
 🛠 Technologies Used
+
 ✅ Python 🐍
 ✅ Pandas & NumPy 📊
 ✅ Scikit-Learn 🤖
